@@ -60,9 +60,9 @@ park_office = gpiozero.Button(4, bounce_time=0.5)
 park_home = gpiozero.Button(17, bounce_time=0.5)
 park_shop = gpiozero.Button(27, bounce_time=0.5)
 park_charge = gpiozero.Button(22, bounce_time=0.5)
-windmill = gpiozero.Servo(10, min_pulse_width=0.00149, max_pulse_width=0.0015)  # Adjust as needed
-led_charge = gpiozero.LED(9)
-led_discharge = gpiozero.LED(11)
+windmill = gpiozero.Servo(11, min_pulse_width=0.00149, max_pulse_width=0.0015)  # Adjust as needed
+led_charge = gpiozero.LED(10)
+led_discharge = gpiozero.LED(9)
 
 if not init_leds(physical_leds=4):
     print("LED initialization failed. Exiting.")
