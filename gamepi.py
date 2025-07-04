@@ -41,7 +41,7 @@ import time
 from typing import List, Optional, Dict
 from led_controller import init_leds, g1, g2, g3, g4, r1, r2, r3, r4, off1, off2, off3, off4, cleanup #todo install
 import gpiozero #todo install
-import gui
+from gui import ScoreGUI
 
 # --------------------------------------------------------------------------- #
 #                         ‑‑‑ Hardware Abstraction ‑‑‑                        #
@@ -67,7 +67,6 @@ led_discharge = gpiozero.LED(11)
 if not init_leds(physical_leds=4):
     print("LED initialization failed. Exiting.")
 
-display = gui.ScoreGUI()
 
 # ---------- Replace the following stubs with real I/O code ---------- #
 
